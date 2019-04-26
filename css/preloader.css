@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+}
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 2;
+}
+.container {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 150px;
+	height: auto;
+	perspective: 1000px;
+}
+.earth {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  /*padding-top: 150px;*/
+  border-radius: 100%;
+  /*background: gray;*/
+  z-index: 3;
+}
+.moon {
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  /*padding-top: 64px;*/
+  border-radius: 100%;
+  top: 45px;
+  left: 35px;
+  /*background: #fff;*/
+  z-index: 2;
+  -webkit-animation: linear 3s orbita infinite;
+}
+/*.ball_e {
+  background: radial-gradient(circle at 80% 20%, #fff 2%, #fff);
+  box-shadow: 70px -90px 90px rgba(0,0,0,.5) inset;
+}
+.ball_m {
+  background: radial-gradient(circle at 80% 20%, #fff 2%, #fff);
+  box-shadow: 30px -30px 30px rgba(0,0,0,.6) inset;
+}*/
+.done{
+	opacity: 0;
+	visibility: hidden;
+}
+@-webkit-keyframes orbita {
+	0%{width: 40px; height: 40px;}
+	24%{z-index: 2;}
+	25%{left: 170px; top: 0px; z-index: 4;}
+	50%{width: 70px; height: 70px;}
+	74%{z-index: 4;}
+	75%{top: 140px; left: -40px; z-index: 2;}
+	100%{width: 40px; height: 40px;}
+}
