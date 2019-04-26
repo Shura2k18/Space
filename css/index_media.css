@@ -1,0 +1,22 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+
+@media (min-width: 576px) { 
+	.first h2 {
+		font-size: 4em;
+	}
+}
+
+@media (min-width: 768px) {  
+
+}
+
+@media (min-width: 992px) {  
+
+}
+
+@media (min-width: 1200px) {  
+
+}
