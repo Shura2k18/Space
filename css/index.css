@@ -21,7 +21,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .parallax-window h1 {
   margin-top: 4em;
@@ -35,6 +34,19 @@ body {
 .parallax-window img {
 	margin-top: 13em;
 	filter: invert(100%);
+}
+#canvas {
+	position: relative;
+	z-index: -1;
+	display: block;
+}
+.parallax-window div {
+	position: absolute;
+	z-index: 1;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
 }
 
 /*----------First block----------*/
