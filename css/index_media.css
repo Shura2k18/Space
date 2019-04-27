@@ -5,7 +5,27 @@
 
 @media (min-width: 576px) { 
 	.first h2 {
-		font-size: 4em;
+		font-size: 6em;
+	}
+	.gagarin {
+		flex-direction: column;
+	}
+	.gagarin img {
+	width: 550px;
+	height: 700px;
+	}
+	.gagarin span {
+		width: 50em;
+	}
+	.first-a:hover .a-line {
+	width: 10.2em;
+	}
+	.second h2 {
+		font-size: 6em;
+	}
+	.galaxy {
+		width: 900px;
+		height: 500px;
 	}
 }
 

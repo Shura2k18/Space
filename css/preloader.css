@@ -40,7 +40,7 @@
   left: 35px;
   /*background: #fff;*/
   z-index: 2;
-  -webkit-animation: linear 3s orbita infinite;
+  -webkit-animation: linear 2s orbita infinite;
 }
 /*.ball_e {
   background: radial-gradient(circle at 80% 20%, #fff 2%, #fff);
